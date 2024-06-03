@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>First Page</title>
+<script src="script.js"></script> <!-- Include script.js -->
+</head>
+<body>
+
+<h1>Welcome to my website, in my website I am going to show you the top 10 most popular foods in the world.</h1>
+<p>By Sami Hijazein.</p>
+
+<!-- Button to go to the Second Page -->
+<button onclick="goToPage('second_page.html')">Go to Second Page</button>
+
+<!-- Button to change background color -->
+<button onclick="changeBackgroundColor()">Change Background Color</button>
+
+<script>
+// Function to change background color
+function changeBackgroundColor() {
+  // Generate random RGB values
+  var red = Math.floor(Math.random() * 256);
+  var green = Math.floor(Math.random() * 256);
+  var blue = Math.floor(Math.random() * 256);
+
+  // Set background color using RGB values
+  document.body.style.backgroundColor = 'rgb(' + red + ',' + green + ',' + blue + ')';
+}
+
+// Function to navigate to other pages
+function goToPage(page) {
+  window.location.href = page;
+}
+</script>
+
+</body>
+</html>
